@@ -131,7 +131,7 @@
                     <ul>
                         <li data-aos="zoom-out" data-aos-duration="1000">
                             <div class = "content">
-                                <a class = "round-button"><i class="fas fa-play"></i></a>
+                                <a class = "round-button scroll-play"><i class="fas fa-play"></i></a>
                             </div>
                             <h3 class = "chapter-header">CHAPTER #1</h3>
                             <h3 class = "chapter-subheader">Intro to Stocks</h3>
@@ -141,7 +141,7 @@
                         </li>
                         <li data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="200">
                             <div class = "content">
-                                <a class = "round-button"><i class="fas fa-play"></i></a>
+                                <a class = "round-button scroll-play"><i class="fas fa-play"></i></a>
                             </div>
                             <h3 class = "chapter-header">CHAPTER #2</h3>
                             <h3 class = "chapter-subheader">How to Choose Your Stocks</h3>
@@ -151,7 +151,7 @@
                         </li>
                         <li data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="400">
                             <div class = "content">
-                                <a class = "round-button"><i class="fas fa-play"></i></a>
+                                <a class = "round-button scroll-play"><i class="fas fa-play"></i></a>
                             </div>
                             <h3 class = "chapter-header">CHAPTER #3</h3>
                             <h3 class = "chapter-subheader">How to Trade Stocks</h3>
@@ -418,20 +418,15 @@
     <script>
         $("#register-link").click(function() { 
             $('html, body').animate({
-                scrollTop: $("#form").offset().top
+                scrollTop: $("#form").offset().top-100
             }, 1000); 
         });
     </script>
     <script>
-        let showMenu = () => {
-            document.getElementById( "menu" ).classList.remove("hidden");
-        }
-
-        let hideMenu = () => {
-            document.getElementById( "menu" ).classList.add("hidden");
-        }
-
-        document.getElementById( "show-menu" ).addEventListener( "click", showMenu );
-        document.getElementById( "hide-menu" ).addEventListener( "click", hideMenu );
+        $(".scroll-play").click(function() { 
+            $('html, body').animate({
+                scrollTop: $("#form").offset().top-100
+            }, 1000); 
+        });
     </script>
 </body>
